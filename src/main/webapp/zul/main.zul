@@ -1,0 +1,61 @@
+<!-- <vbox vflex="1" hflex="1" align="center" pack="center" spacing="20px" >
+    <label value="Main zul file"/>
+</vbox> -->
+<vlayout id="mainForm" apply="lt.evo01.MainFormController">
+    <!-- <caption label="Profile (MVC)"/>  Cia yra window parametras, su vlayout'u failina -->
+    <label value="Main zul file"/>
+    <vlayout>
+        <grid width="500px">
+            <columns>
+                <column align="right" hflex="min"/>
+                <column/>
+            </columns>
+            <rows>
+                <row>
+                    <cell>Account :</cell>
+                    <cell><label id="account"/></cell>
+                </row>
+                <row>
+                    <cell>Full Name :</cell>
+                    <cell>
+                        <textbox id="fullName"
+                        constraint="no empty: Please enter your full name" width="200px"/>
+                    </cell>
+                </row>
+                <row>
+                    <cell>Email :</cell>
+                    <cell>
+                        <textbox id="email"
+                        constraint="/.+@.+\.[a-z]+/: Please enter an e-mail address" width="200px"/>
+                    </cell>
+                </row>
+                <row>
+                    <cell>Birthday :</cell>
+                    <cell>
+                        <datebox id="birthday"
+                        constraint="no future" width="200px"/>
+                    </cell>
+                </row>
+                <row>
+                    <cell>Country :</cell>
+                    <cell>
+                        <listbox id="country" mold="select" width="200px">
+                            <template name="model">
+                                <listitem label="${each}" />
+                            </template>
+                        </listbox>
+                    </cell>
+                </row>
+                <row>
+                    <cell>Bio :</cell>
+                    <cell><textbox id="bio" multiline="true" hflex="1" height="200px" /></cell>
+                </row>
+            </rows>
+        </grid>
+        <div>You are editing <label id="nameLabel"/>'s profile.</div>
+        <hlayout>
+            <button id="saveProfile" label="Save Me!"/>
+            <button id="reloadProfile" label="Reload Me!"/>
+        </hlayout>
+    </vlayout>
+</vlayout>

@@ -1,0 +1,24 @@
+<zk>
+    <borderlayout hflex="1" vflex="1">
+        <north height="100px">
+            <!-- <label style="font-size:50px">North for header</label> -->
+            <include src="/zul/banner.zul"/>
+        </north>
+        <west width="260px">
+             <!-- <label style="font-size:50px">West for sidebar</label> -->
+             <include src="/zul/sidebar.zul"/>
+        </west>
+        <center id="mainContent">
+             <!-- <label style="font-size:50px">Center for content</label> -->
+             <include src="/zul/main.zul"/>
+        </center>
+        <south height="50px">
+             <!-- <label style="font-size:50px">South for footer</label> -->
+             <include src="/zul/footer.zul"/>
+        </south>
+        <east width="260px">
+             <!-- <label style="font-size:50px">East for sidebar</label> -->
+             <include src="/zul/east.zul"/>
+        </east>
+    </borderlayout>
+</zk>

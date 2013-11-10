@@ -1,0 +1,11 @@
+    <hbox hflex="1" vflex="1" align="center">
+        <a href="http://www.zkoss.org/">
+            <label value="www.zkoss.org" />
+        </a>
+        <div width="400px">
+            <label value="Application Name" />
+        </div>
+        <hbox hflex="1" vflex="1" pack="end" align="end">
+            Anonymous
+        </hbox>
+    </hbox>

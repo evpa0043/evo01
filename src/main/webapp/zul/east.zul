@@ -1,0 +1,17 @@
+<grid hflex="1" vflex="1">
+    <columns>
+        <column width="36px"/>
+        <column/>
+    </columns>
+    <rows>
+        <row>
+            <label value="O" /><a href="http://www.zkoss.org/">ZK</a>
+        </row>
+        <row>
+            <label value="O" /><a href="http://www.zkoss.org/zkdemo">ZK Demo</a>
+        </row>
+        <row>
+            <label value="O" /><a href="http://books.zkoss.org/wiki/ZK_Developer's_Reference">ZK Developer Reference</a>
+        </row>
+    </rows>
+</grid>
